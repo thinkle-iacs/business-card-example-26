@@ -1,0 +1,22 @@
+modules = ["web", "nodejs-20"]
+
+[nix]
+channel = "stable-25_05"
+
+[agent]
+expertMode = true
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Start website"
+mode = "sequential"
+author = 1066801
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm start"
+
+[[ports]]
+localPort = 5500
+externalPort = 80
