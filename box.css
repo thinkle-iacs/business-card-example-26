@@ -14,10 +14,10 @@ h6 {
 /* WIREFRAME: Uncomment this to see the outline of every box on your
  * card. (An outline takes up no space, so it won't change your layout.)
  * Comment it back out when you are done. */
-
+/*
 .card * {
-  outline: 1px dashed red;
-}
+  outline: 1px dashed orange;
+}*/
 
 
 /* Your box model card styles go here!
@@ -25,5 +25,67 @@ h6 {
  * (no flexbox or grid). */
 .card h1 {
   /* Demo style -- remove me and write your own */
+  margin-top: 1in;
+  font-family: Courier;
+  font-size: 24pt;
   text-align: center;
+  color: #0022a8;
+  border-top: 3px dashed grey;
+  background-color: #fafafa;
+}
+
+.card .card-front {
+  background-color: #1a0a0a;
+}
+
+.card .card-front p {
+  text-align: center;
+  font-family: Verdana;
+  background-color: #fafafa;
+  border-bottom: 3px dashed grey;
+}
+
+.card-front p::before {
+  content: "(";
+  color: grey;
+}
+
+.card-front p::after {
+  content: ")";
+  color: grey;
+}
+
+.card .card-back {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #dafaff;
+  box-sizing: border-box;
+  padding: 8pt;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-block: 0;
+}
+
+.card-back p {
+  font-style: italic;
+  text-align: right;
+}
+
+li {
+  margin-bottom: 0pt;
+  height: 1.5em;
+  margin-top: 4pt;
+}
+
+li::before {
+  display: inline-block;
+  content: " ";
+  border: 10px solid transparent;
+  border-left: 10px solid blue;
+  width: 0px;
+  height: 0rem;
+  vertical-align: middle;
+
 }
