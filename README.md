@@ -100,7 +100,7 @@ Both `box.css` and `flex.css` start with two helpers:
 <tr>
   <td>Flexbox/Grid Usage</td>
   <td>Uses flexbox or grid to align items in a basic layout.</td>
-  <td>Effetively uses flexbox to align items in at least two separate containers.</td>
+  <td>Effectively uses flexbox to align items in at least two separate containers.</td>
   <td>Masterfully uses flexbox and/or grid to create an effective layout, including 
   specifying alignment in both main and cross axes (justify-content and align-items).
   <br>
